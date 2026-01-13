@@ -1,8 +1,8 @@
 {
-	"jdocs": "vicapi.pvic.xyz:8081",
-	"tms": "vicapi.pvic.xyz:8081",
-	"chipper": "vicapi.pvic.xyz:8081",
-	"check": "vicapi.pvic.xyz/ok",
-	"logfiles": "s3://anki-device-logs-prod/victor",
-	"appkey": "oDoa0quieSeir6goowai7f"
+        "jdocs": "cavalier.net-3.froggitti.net:8081",
+        "tms": "cavalier.net-3.froggitti.net:8081",
+        "chipper": "cavalier.net-3.froggitti.net:8081",
+        "check": "cavalier.net-3.froggitti.net/ok",
+        "logfiles": "s3://anki-device-logs-prod/victor",
+        "appkey": "oDoa0quieSeir6goowai7f"
 }
