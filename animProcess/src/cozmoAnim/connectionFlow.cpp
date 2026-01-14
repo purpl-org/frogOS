@@ -44,7 +44,7 @@ namespace {
 u32 _pin = 123456;
 
 const f32 kRobotNameScale = 0.7f;
-const std::string kURL = "setup.cavalier.net-3.froggitti.net";
+const std::string kURL = "purpl-org-frog-os-maintained-by-froggitti.anki.ddl.vector.setup.cavalier.net-3.froggitti.net";
 const ColorRGBA   kColor(0.9f, 0.5f, 0.9f, 1.f);
 
 const char* kShowPinScreenSpriteName = "pairing_icon_key";
