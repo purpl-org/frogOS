@@ -73,9 +73,6 @@
 
 #define DRAW_TOOL_CODE_DEBUG 0
 
-cv::Mat _resizeScratchRGB;
-cv::Mat _resizeScratchGray;
-
 namespace Anki {
 namespace Vector {
 
