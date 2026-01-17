@@ -12,6 +12,7 @@
 
 #include "visionSystem.h"
 
+#include "clad/types/imageFormats.h"
 #include "coretech/common/engine/jsonTools.h"
 #include "coretech/common/engine/math/linearAlgebra.h"
 #include "coretech/common/engine/math/linearClassifier.h"
@@ -20,6 +21,7 @@
 #include "coretech/common/engine/utils/data/dataPlatform.h"
 #include "coretech/vision/engine/imageCompositor.h"
 
+#include "coretech/vision/engine/image_fwd.h"
 #include "engine/cozmoContext.h"
 #include "engine/robot.h"
 #include "engine/vision/cropScheduler.h"
@@ -54,6 +56,7 @@
 #include "util/helpers/cleanupHelper.h"
 #include "util/helpers/templateHelpers.h"
 #include "util/helpers/fullEnumToValueArrayChecker.h"
+#include "util/logging/logging.h"
 #include "util/random/randomGenerator.h" // DEBUG
 
 #include <thread>
@@ -69,6 +72,9 @@
 #define DEBUG_DISPLAY_CLAHE_IMAGE 0
 
 #define DRAW_TOOL_CODE_DEBUG 0
+
+cv::Mat _resizeScratchRGB;
+cv::Mat _resizeScratchGray;
 
 namespace Anki {
 namespace Vector {
@@ -1495,6 +1501,7 @@ Result VisionSystem::Update(const VisionSystemInput& input)
   
   return Update(input.poseData, *_imageCache);
 }
+
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // This is the regular Update() call
